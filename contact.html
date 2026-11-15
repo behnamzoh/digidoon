@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس و سفارش تلگرامی | دیجی دون</title>
+    <meta name="description" content="ثبت سفارش مستقیم تلگرامی، درخواست تامین عمده کافی‌شاپ و شرکت‌ها و اطلاعات تماس آتلیه دیجی دون" />
+    <meta property="og:title" content="تماس و سفارش مستقیم | دیجی دون" />
+    <meta property="og:description" content="ثبت سفارش مستقیم تلگرامی و مشاوره خرید عمده قهوه فوری گلد دیجی دون" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600;700&family=Noto+Serif:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-mark">
+          <span>دیجی دون</span>
+          <span class="brand-mark-latin" aria-hidden="true">DIGI DOON</span>
+        </a>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <a href="index.html" class="nav-link">صفحه اصلی</a>
+          <a href="products.html" class="nav-link">محصولات</a>
+          <a href="about.html" class="nav-link">درباره ما</a>
+          <a href="contact.html" class="nav-link is-active" aria-current="page">تماس و سفارش</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="bag-trigger" data-open-bag aria-label="باز کردن سبد سفارش">
+            <span>سبد سفارش</span>
+            <span class="bag-count" data-bag-count>۰</span>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="باز کردن منوی موبایل" aria-expanded="false" aria-controls="mobile-nav-panel">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-nav-panel" class="mobile-nav-panel">
+        <div class="container">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">صفحه اصلی</a></li>
+            <li><a href="products.html" class="mobile-nav-link">محصولات</a></li>
+            <li><a href="about.html" class="mobile-nav-link">درباره ما</a></li>
+            <li><a href="contact.html" class="mobile-nav-link is-active">تماس و سفارش</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-pad" style="padding-bottom:2rem;">
+        <div class="container">
+          <span class="eyebrow">میز مشاوره و سفارش تلگرامی</span>
+          <h1 class="hero-title" style="max-width:44rem;">ارتباط مستقیم با آتلیه دیجی دون</h1>
+          <p class="lead-copy" style="max-width:42rem;margin-top:0.875rem;">
+            فرم زیر را تکمیل کنید تا پیام اختصاصی شما برای کارشناسان فروش در تلگرام آماده شود. همچنین می‌توانید مستقیم به شناسه تلگرام ما پیام دهید.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-pad" style="padding-top:1.5rem;">
+        <div class="container">
+          <div class="grid-2" style="align-items:start;">
+            <!-- Direct Telegram Form -->
+            <div class="form-card">
+              <h2 class="card-title" style="margin-bottom:0.5rem;">فرم ثبت درخواست و مشاوره تلگرامی</h2>
+              <p class="muted-copy" style="font-size:0.875rem;margin-bottom:1.5rem;">
+                پاسخ‌گویی در ساعات کاری زیر ۱۰ دقیقه انجام می‌شود.
+              </p>
+
+              <form id="contact-telegram-form" class="form-grid" novalidate>
+                <div class="field-group">
+                  <label class="field-label" for="contact-topic">نوع درخواست</label>
+                  <select id="contact-topic" class="select-field" style="width:100%;">
+                    <option value="سفارش شخصی و هدیه">سفارش شخصی و هدیه</option>
+                    <option value="تامین کافی‌شاپ و هتل">تامین کافی‌شاپ و هتل</option>
+                    <option value="سفارش سازمانی و پک شرکتی">سفارش سازمانی و پک شرکتی</option>
+                    <option value="پیگیری سفارش ثبت‌شده">پیگیری سفارش ثبت‌شده</option>
+                  </select>
+                </div>
+
+                <div class="form-grid form-grid-2">
+                  <div class="field-group" id="contact-group-name">
+                    <label class="field-label" for="contact-name">نام و نام خانوادگی</label>
+                    <input id="contact-name" type="text" class="input-field" placeholder="مثال: نگار تهرانی" required />
+                    <span class="field-error"></span>
+                  </div>
+
+                  <div class="field-group" id="contact-group-phone">
+                    <label class="field-label" for="contact-phone">شماره تماس</label>
+                    <input id="contact-phone" type="tel" class="input-field" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required />
+                    <span class="field-error"></span>
+                  </div>
+                </div>
+
+                <div class="field-group" id="contact-group-city">
+                  <label class="field-label" for="contact-city">شهر</label>
+                  <input id="contact-city" type="text" class="input-field" placeholder="تهران / شیراز / اصفهان" required />
+                  <span class="field-error"></span>
+                </div>
+
+                <div class="field-group" id="contact-group-message">
+                  <label class="field-label" for="contact-message">شرح سفارش یا پرسش</label>
+                  <textarea id="contact-message" class="textarea-field" placeholder="نام محصول، تعداد مورد نظر یا سوال خود را بنویسید..." required></textarea>
+                  <span class="field-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-prestige btn-full">آماده‌سازی پیام و ارسال در تلگرام</button>
+              </form>
+
+              <div id="contact-confirmation-box" class="order-confirmation-box">
+                <strong style="color:var(--navy-primary);font-size:0.9375rem;">متن درخواست آماده ارسال شد</strong>
+                <pre id="contact-preview-text" class="order-preview-pre"></pre>
+                <div style="display:flex;flex-wrap:wrap;gap:0.625rem;">
+                  <a id="contact-telegram-anchor" href="https://t.me/digidoon_coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="flex:1;">باز کردن در تلگرام</a>
+                  <button type="button" id="contact-copy-btn" class="btn btn-secondary btn-sm">کپی متن</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Atelier Details & FAQ -->
+            <div style="display:flex;flex-direction:column;gap:2rem;">
+              <div class="step-card">
+                <span class="eyebrow">اطلاعات تماس مستقیم</span>
+                <h2 class="card-title" style="margin-bottom:1.25rem;">آتلیه و شوروم تهران</h2>
+                <dl style="display:flex;flex-direction:column;gap:1rem;font-size:0.9375rem;">
+                  <div style="display:flex;justify-content:space-between;gap:1rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border-tonal);">
+                    <dt style="color:var(--ink-tertiary);">تلگرام رسمی سفارش:</dt>
+                    <dd><a href="https://t.me/digidoon_coffee" target="_blank" rel="noopener noreferrer" style="color:var(--navy-primary);font-weight:600;" dir="ltr">@digidoon_coffee</a></dd>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;gap:1rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border-tonal);">
+                    <dt style="color:var(--ink-tertiary);">تلفن مستقیم:</dt>
+                    <dd class="tabular-nums" style="font-weight:600;color:var(--navy-primary);">۰۲۱-۲۲۶۵۴۸۹۰</dd>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;gap:1rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border-tonal);">
+                    <dt style="color:var(--ink-tertiary);">ساعات پاسخ‌گویی:</dt>
+                    <dd>شنبه تا پنج‌شنبه، ۹:۰۰ تا ۱۹:۰۰</dd>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;gap:1rem;">
+                    <dt style="color:var(--ink-tertiary);">نشانی شوروم:</dt>
+                    <dd>تهران، خیابان فرشته، پلاک ۲۴، واحد ۳</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="accordion-list">
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger" aria-expanded="true" aria-controls="faq-1">
+                    <span>ارسال سفارش‌ها چقدر زمان می‌برد؟</span>
+                    <span class="accordion-glyph" aria-hidden="true">−</span>
+                  </button>
+                  <div id="faq-1" class="accordion-panel is-open">
+                    سفارش‌های شهر تهران که تا ساعت ۱۵ ثبت شوند، همان روز با پیک اختصاصی ارسال می‌گردند. سفارش‌های سایر شهرها با پست پیشتاز یا تیپاکس طی ۲ تا ۳ روز کاری تحویل داده می‌شوند.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+                    <span>شرایط نگهداری شیشه و ساشه قهوه گلد چیست؟</span>
+                    <span class="accordion-glyph" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-2" class="accordion-panel">
+                    ظرف را در محیط خشک، خنک و دور از نور مستقیم آفتاب نگهداری کنید و پس از هر بار برداشت، درپوش را محکم ببندید تا کریستال‌ها رطوبت جذب نکنند.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+                    <span>آیا امکان ارسال نمونه تست برای شرکت‌ها وجود دارد؟</span>
+                    <span class="accordion-glyph" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-3" class="accordion-panel">
+                    بله، برای کافی‌شاپ‌ها و سازمان‌ها پک سمپل ساشه گلد ارسال می‌شود. کافی است موضوع را در فرم مقابل انتخاب کرده و درخواست خود را در تلگرام ثبت کنید.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark" style="color:#ffffff;margin-bottom:0.875rem;">
+              <span>دیجی دون</span>
+              <span class="brand-mark-latin" style="color:var(--gold-soft);">DIGI DOON</span>
+            </div>
+            <p style="font-size:0.875rem;line-height:1.85;max-width:22rem;color:rgba(255,255,255,0.72);">
+              آتلیه تخصصی قهوه فوری گلد با فرآوری انجمادی؛ ترکیبی از دقت دانه‌های منتخب عربیکا و سادگی آماده شدن در هر زمان و مکان.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">دسترسی سریع</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">صفحه اصلی</a></li>
+              <li><a href="products.html">کلکسیون محصولات</a></li>
+              <li><a href="about.html">داستان و فرآوری ما</a></li>
+              <li><a href="contact.html">تماس و سفارش عمده</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">دسته‌بندی‌ها</h3>
+            <ul class="footer-links">
+              <li><a href="products.html">شیشه گلد کلاسیک</a></li>
+              <li><a href="products.html">قوطی رزرو کلمبیا</a></li>
+              <li><a href="products.html">ساشه تک‌نفره سفر</a></li>
+              <li><a href="products.html">پک هدیه آتلیه</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">سفارش و پشتیبانی</h3>
+            <ul class="footer-links">
+              <li><a href="https://t.me/digidoon_coffee" target="_blank" rel="noopener noreferrer">تلگرام مستقیم: @digidoon_coffee</a></li>
+              <li>تهران، خیابان فرشته، پلاک ۲۴</li>
+              <li>شنبه تا پنج‌شنبه: ۹ تا ۱۹</li>
+              <li>تلفن: ۰۲۱-۲۲۶۵۴۸۹۰</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© ۱۴۰۵ دیجی دون (DIGI DOON) — تمامی حقوق محفوظ است.</span>
+          <span>ارسال روزانه به تهران و سراسر ایران</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Slide-Over Order Bag Drawer -->
+    <div id="bag-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+    <aside id="order-drawer" class="order-drawer" aria-label="سبد سفارش دیجی دون" aria-hidden="true">
+      <div class="drawer-header">
+        <h2 class="drawer-title">سبد سفارش شما</h2>
+        <button type="button" id="close-bag-btn" class="icon-close-btn" aria-label="بستن سبد سفارش">×</button>
+      </div>
+
+      <div class="drawer-body">
+        <div id="bag-shipping-note" class="shipping-note" style="display:none;"></div>
+        <div id="bag-items-list" style="display:flex;flex-direction:column;gap:1rem;"></div>
+
+        <div id="bag-checkout-form-wrap" style="display:none;flex-direction:column;gap:1rem;margin-top:0.5rem;">
+          <h3 class="card-title" style="font-size:1.0625rem;">مشخصات جهت ارسال فاکتور تلگرامی</h3>
+          <form id="bag-telegram-form" novalidate style="display:flex;flex-direction:column;gap:0.875rem;">
+            <div class="field-group" id="bag-group-name">
+              <label class="field-label" for="bag-cust-name">نام و نام خانوادگی</label>
+              <input class="input-field" id="bag-cust-name" type="text" placeholder="مثال: آرمین شایان" required />
+              <span class="field-error"></span>
+            </div>
+            <div class="field-group" id="bag-group-phone">
+              <label class="field-label" for="bag-cust-phone">شماره تماس</label>
+              <input class="input-field" id="bag-cust-phone" type="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required />
+              <span class="field-error"></span>
+            </div>
+            <div class="field-group" id="bag-group-city">
+              <label class="field-label" for="bag-cust-city">شهر و نشانی کوتاه</label>
+              <input class="input-field" id="bag-cust-city" type="text" placeholder="تهران، سعادت‌آباد" required />
+              <span class="field-error"></span>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="bag-cust-note">توضیحات (اختیاری)</label>
+              <input class="input-field" id="bag-cust-note" type="text" placeholder="بسته‌بندی هدیه یا زمان ارسال دلخواه" />
+            </div>
+            <button type="submit" class="btn btn-prestige btn-full">ثبت سفارش و ایجاد لینک تلگرام</button>
+          </form>
+
+          <div id="bag-order-confirmation" class="order-confirmation-box">
+            <strong style="color:var(--navy-primary);font-size:0.9375rem;">سفارش شما آماده ارسال است</strong>
+            <pre id="bag-order-preview" class="order-preview-pre"></pre>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <a id="bag-telegram-link" href="https://t.me/digidoon_coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="flex:1;">ارسال مستقیم در تلگرام</a>
+              <button type="button" id="bag-copy-order-btn" class="btn btn-secondary btn-sm">کپی متن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <div style="display:flex;justify-content:space-between;font-size:0.875rem;color:var(--ink-secondary);">
+          <span>جمع اقلام</span>
+          <span id="bag-subtotal" class="tabular-nums">۰ تومان</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.875rem;color:var(--ink-secondary);">
+          <span>هزینه ارسال</span>
+          <span id="bag-shipping" class="tabular-nums">رایگان</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:1.0625rem;font-weight:700;color:var(--navy-primary);padding-top:0.5rem;border-top:1px solid var(--border-tonal);">
+          <span>مبلغ نهایی</span>
+          <span id="bag-total" class="tabular-nums">۰ تومان</span>
+        </div>
+      </div>
+    </aside>
+
+    <div id="toast-banner" class="toast-banner" role="status" aria-live="polite"></div>
+
+    <script src="./assets/js/store-logic.js" defer></script>
+    <script src="./assets/js/data.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+  </body>
+</html>
